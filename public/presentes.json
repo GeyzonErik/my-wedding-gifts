@@ -1,0 +1,57 @@
+
+[
+  {
+    "nome": "Jogo de Panelas Antiaderente",
+    "image": "https://images.unsplash.com/photo-1556909045-f2c4cc02c4c2?w=400&h=300&fit=crop&crop=center",
+    "value": 299.90,
+    "qrCode": "https://images.unsplash.com/photo-1618160702438-9b02ab6515c9?w=200&h=200&fit=crop&crop=center",
+    "pixKey": "casamento@exemplo.com",
+    "description": "Conjunto completo para nossa nova cozinha",
+    "message": "Obrigado por nos ajudar a preparar refeições deliciosas juntos! ❤️"
+  },
+  {
+    "nome": "Jogo de Cama Casal King",
+    "image": "https://images.unsplash.com/photo-1721322800607-8c38375eef04?w=400&h=300&fit=crop&crop=center",
+    "value": 189.50,
+    "qrCode": "https://images.unsplash.com/photo-1618160702438-9b02ab6515c9?w=200&h=200&fit=crop&crop=center",
+    "pixKey": "casamento@exemplo.com",
+    "description": "Para noites aconchegantes em nosso lar",
+    "message": "Sua generosidade tornará nossos sonhos ainda mais doces! 💕"
+  },
+  {
+    "nome": "Cafeteira Elétrica",
+    "image": "https://images.unsplash.com/photo-1470813740244-df37b8c1edcb?w=400&h=300&fit=crop&crop=center",
+    "value": 149.99,
+    "qrCode": "https://images.unsplash.com/photo-1618160702438-9b02ab6515c9?w=200&h=200&fit=crop&crop=center",
+    "pixKey": "casamento@exemplo.com",
+    "description": "Para começar todas as manhãs com carinho",
+    "message": "Cada xícara de café será um lembrete do seu carinho! ☕"
+  },
+  {
+    "nome": "Conjunto de Taças de Cristal",
+    "image": "https://images.unsplash.com/photo-1500673922987-e212871fec22?w=400&h=300&fit=crop&crop=center",
+    "value": 249.90,
+    "qrCode": "https://images.unsplash.com/photo-1618160702438-9b02ab6515c9?w=200&h=200&fit=crop&crop=center",
+    "pixKey": "casamento@exemplo.com",
+    "description": "Para celebrar momentos especiais",
+    "message": "Brindaremos ao nosso amor e à sua amizade! 🥂"
+  },
+  {
+    "nome": "Aspirador de Pó Robô",
+    "image": "https://images.unsplash.com/photo-1556909045-f2c4cc02c4c2?w=400&h=300&fit=crop&crop=center",
+    "value": 899.90,
+    "qrCode": "https://images.unsplash.com/photo-1618160702438-9b02ab6515c9?w=200&h=200&fit=crop&crop=center",
+    "pixKey": "casamento@exemplo.com",
+    "description": "Mais tempo para aproveitarmos juntos",
+    "message": "Obrigado por nos dar mais tempo para o que realmente importa: nosso amor! 🤖"
+  },
+  {
+    "nome": "Kit Utensílios de Cozinha",
+    "image": "https://images.unsplash.com/photo-1721322800607-8c38375eef04?w=400&h=300&fit=crop&crop=center",
+    "value": 89.90,
+    "qrCode": "https://images.unsplash.com/photo-1618160702438-9b02ab6515c9?w=200&h=200&fit=crop&crop=center",
+    "pixKey": "casamento@exemplo.com",
+    "description": "Essenciais para nossa nova vida",
+    "message": "Cada refeição preparada será temperada com gratidão! 👨‍🍳"
+  }
+]
