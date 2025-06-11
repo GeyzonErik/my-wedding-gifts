@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 
 interface Present {
@@ -9,13 +8,18 @@ interface Present {
   pixKey: string;
   description?: string;
   message?: string;
+  disable?: boolean;
 }
+
+type SortOrder = 'asc' | 'desc';
 
 const Index = () => {
   const [presents, setPresents] = useState<Present[]>([]);
   const [selectedPresent, setSelectedPresent] = useState<Present | null>(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [copySuccess, setCopySuccess] = useState(false);
+  const [sortOrder, setSortOrder] = useState<SortOrder>('asc');
+  const [isPixKeyExpanded, setIsPixKeyExpanded] = useState(false);
 
   useEffect(() => {
     fetch('/presentes.json')
@@ -27,6 +31,7 @@ const Index = () => {
   const openModal = (present: Present) => {
     setSelectedPresent(present);
     setIsModalOpen(true);
+    setIsPixKeyExpanded(false);
     document.body.style.overflow = 'hidden';
   };
 
@@ -34,6 +39,7 @@ const Index = () => {
     setIsModalOpen(false);
     setSelectedPresent(null);
     setCopySuccess(false);
+    setIsPixKeyExpanded(false);
     document.body.style.overflow = 'unset';
   };
 
@@ -56,6 +62,16 @@ const Index = () => {
     }).format(value);
   };
 
+  const toggleSortOrder = () => {
+    setSortOrder(prev => prev === 'asc' ? 'desc' : 'asc');
+  };
+
+  const sortedPresents = [...presents]
+    .filter(present => !present.disable)
+    .sort((a, b) => {
+      return sortOrder === 'asc' ? a.value - b.value : b.value - a.value;
+    });
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-serenity-soft to-white">
       {/* Header com mensagem de boas-vindas */}
@@ -75,8 +91,18 @@ const Index = () => {
 
       {/* Lista de presentes */}
       <main className="max-w-6xl mx-auto px-6 pb-16">
+        {/* Filtro de preço */}
+        <div className="mb-8 flex justify-end">
+          <button
+            onClick={toggleSortOrder}
+            className="wedding-button flex items-center gap-2"
+          >
+            {sortOrder === 'asc' ? '↑ Menor preço' : '↓ Maior preço'}
+          </button>
+        </div>
+
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {presents.map((present, index) => (
+          {sortedPresents.map((present, index) => (
             <div
               key={index}
               className="wedding-card fade-in hover-lift"
@@ -146,9 +172,23 @@ const Index = () => {
                 
                 <div className="bg-white rounded-lg p-4 mb-4">
                   <p className="text-sm text-serenity-text-light mb-2">Chave PIX:</p>
-                  <p className="font-mono text-serenity-text break-all mb-3">
-                    {selectedPresent.pixKey}
-                  </p>
+                  <div className="relative">
+                    <p 
+                      className={`font-mono text-serenity-text break-all mb-3 transition-all duration-300 ${
+                        isPixKeyExpanded ? 'max-h-none' : 'max-h-12 overflow-hidden'
+                      }`}
+                    >
+                      {selectedPresent.pixKey}
+                    </p>
+                    {selectedPresent.pixKey.length > 50 && (
+                      <button
+                        onClick={() => setIsPixKeyExpanded(!isPixKeyExpanded)}
+                        className="text-sm text-serenity-blue hover:text-serenity-blue/80 transition-colors"
+                      >
+                        {isPixKeyExpanded ? 'Ver menos' : 'Ver mais'}
+                      </button>
+                    )}
+                  </div>
                   
                   <button
                     onClick={copyPixKey}
