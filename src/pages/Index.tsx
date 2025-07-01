@@ -230,7 +230,7 @@ const Index = () => {
                   onClick={openConfirmationModal}
                   className="wedding-button w-full bg-green-600 hover:bg-green-700"
                 >
-                  📱 Confirmar Pagamento via WhatsApp
+                  📱 Confirmar Presente via WhatsApp
                 </button>
                 
                 <p className="text-xs text-serenity-text-light">
