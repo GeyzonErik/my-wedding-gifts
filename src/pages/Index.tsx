@@ -17,9 +17,11 @@ const Index = () => {
   const [presents, setPresents] = useState<Present[]>([]);
   const [selectedPresent, setSelectedPresent] = useState<Present | null>(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [isConfirmationModalOpen, setIsConfirmationModalOpen] = useState(false);
   const [copySuccess, setCopySuccess] = useState(false);
   const [sortOrder, setSortOrder] = useState<SortOrder>('asc');
   const [isPixKeyExpanded, setIsPixKeyExpanded] = useState(false);
+  const [confirmationMessage, setConfirmationMessage] = useState('');
 
   useEffect(() => {
     fetch('/presentes.json')
@@ -43,6 +45,20 @@ const Index = () => {
     document.body.style.overflow = 'unset';
   };
 
+  const openConfirmationModal = () => {
+    if (selectedPresent) {
+      setConfirmationMessage(`É uma honra fazer parte deste momento único! Este presente é um pequeno gesto do meu carinho por vocês. Que Deus abençoe esta união com muito amor e cumplicidade!`);
+      setIsConfirmationModalOpen(true);
+      closeModal();
+    }
+  };
+
+  const closeConfirmationModal = () => {
+    setIsConfirmationModalOpen(false);
+    setConfirmationMessage('');
+    document.body.style.overflow = 'unset';
+  };
+
   const copyPixKey = async () => {
     if (selectedPresent?.pixKey) {
       try {
@@ -53,6 +69,15 @@ const Index = () => {
         console.error('Erro ao copiar chave PIX:', error);
       }
     }
+  };
+
+  const sendWhatsAppMessage = () => {
+    // Remove emojis da mensagem
+    const cleanMessage = confirmationMessage.replace(/[\u{1F600}-\u{1F64F}]|[\u{1F300}-\u{1F5FF}]|[\u{1F680}-\u{1F6FF}]|[\u{1F1E0}-\u{1F1FF}]|[\u{2600}-\u{26FF}]|[\u{2700}-\u{27BF}]/gu, '');
+    const encodedMessage = encodeURIComponent(cleanMessage);
+    const whatsappUrl = `https://wa.me/5581994468804?text=${encodedMessage}`;
+    window.open(whatsappUrl, '_blank');
+    closeConfirmationModal();
   };
 
   const formatCurrency = (value: number) => {
@@ -199,17 +224,73 @@ const Index = () => {
                 </div>
               </div>
               
-              {selectedPresent.message && (
-                <div className="bg-gradient-to-r from-serenity-soft to-serenity-accent rounded-2xl p-6">
-                  <p className="text-serenity-text italic leading-relaxed">
-                    "{selectedPresent.message}"
-                  </p>
-                </div>
-              )}
+              {/* Botão de confirmação de pagamento */}
+              <div className="space-y-3">
+                <button
+                  onClick={openConfirmationModal}
+                  className="wedding-button w-full bg-green-600 hover:bg-green-700"
+                >
+                  📱 Confirmar Pagamento via WhatsApp
+                </button>
+                
+                <p className="text-xs text-serenity-text-light">
+                  Clique aqui após fazer o pagamento para nos avisar!
+                </p>
+              </div>
             </div>
           </div>
         </div>
       )}
+
+             {/* Confirmação de pagamento */}
+       {isConfirmationModalOpen && (
+         <div className="wedding-modal" onClick={closeConfirmationModal}>
+           <div className="wedding-modal-content" onClick={(e) => e.stopPropagation()}>
+             <button
+               onClick={closeConfirmationModal}
+               className="close-button"
+               aria-label="Fechar modal"
+             >
+               ✕
+             </button>
+             
+             <div className="text-center">
+               <div className="text-6xl mb-4">💝</div>
+               <h2 className="font-display text-2xl font-medium text-serenity-text mb-2">
+                 Confirmar Pagamento
+               </h2>
+               
+               <p className="text-serenity-text-light mb-4">
+                 Personalize sua mensagem antes de enviar:
+               </p>
+               
+               <textarea
+                 value={confirmationMessage}
+                 onChange={(e) => setConfirmationMessage(e.target.value)}
+                 className="confirmation-textarea mb-4"
+                 rows={4}
+                 placeholder="Digite sua mensagem aqui..."
+               ></textarea>
+               
+               <div className="space-y-3">
+                 <button
+                   onClick={sendWhatsAppMessage}
+                   className="wedding-button w-full bg-green-600 hover:bg-green-700"
+                 >
+                   📱 Enviar via WhatsApp
+                 </button>
+                 
+                 <button
+                   onClick={closeConfirmationModal}
+                   className="wedding-button w-full bg-gray-500 hover:bg-gray-600"
+                 >
+                   Cancelar
+                 </button>
+               </div>
+             </div>
+           </div>
+         </div>
+       )}
     </div>
   );
 };

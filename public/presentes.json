@@ -22,7 +22,7 @@
   {
     "nome": "Jogo de Toalha",
     "image": "/assets/gift-images/toalha.jpg",
-    "value": 159.9,
+    "value": 178.9,
     "qrCode": "/assets/qr-codes/qr-code.png",
     "pixKey": "00020101021126580014br.gov.bcb.pix0136c0a2d627-ba9e-4e48-8650-93cbfb8979915204000053039865802BR5917JOSE E G DA COSTA6013SANTA CRUZ DO62070503***6304366D",
     "description": "Jogo de toalhas 100% algodão, macias e absorventes.",
@@ -32,7 +32,7 @@
   {
     "nome": "Jogo de Copos",
     "image": "/assets/gift-images/copos.jpg",
-    "value": 169.9,
+    "value": 149.9,
     "qrCode": "/assets/qr-codes/qr-code.png",
     "pixKey": "00020101021126580014br.gov.bcb.pix0136c0a2d627-ba9e-4e48-8650-93cbfb8979915204000053039865802BR5917JOSE E G DA COSTA6013SANTA CRUZ DO62070503***6304366D",
     "description": "Conjunto de copos de vidro para diversas bebidas.",
@@ -42,7 +42,7 @@
   {
     "nome": "Jogo de Panela Antiaderente",
     "image": "/assets/gift-images/panelas.jpg",
-    "value": 249.9,
+    "value": 399.9,
     "qrCode": "/assets/qr-codes/qr-code.png",
     "pixKey": "00020101021126580014br.gov.bcb.pix0136c0a2d627-ba9e-4e48-8650-93cbfb8979915204000053039865802BR5917JOSE E G DA COSTA6013SANTA CRUZ DO62070503***6304366D",
     "description": "Conjunto de panelas antiaderentes, fáceis de limpar e cozinhar.",
@@ -52,7 +52,7 @@
   {
     "nome": "Sanduicheira Grill",
     "image": "/assets/gift-images/sanduicheira.jpg",
-    "value": 159.9,
+    "value": 189.9,
     "qrCode": "/assets/qr-codes/qr-code.png",
     "pixKey": "00020101021126580014br.gov.bcb.pix0136c0a2d627-ba9e-4e48-8650-93cbfb8979915204000053039865802BR5917JOSE E G DA COSTA6013SANTA CRUZ DO62070503***6304366D",
     "description": "Sanduicheira grill 2 em 1, para preparar sanduíches e grelhados.",
@@ -62,7 +62,7 @@
   {
     "nome": "Liquidificador",
     "image": "/assets/gift-images/liquidificador.jpg",
-    "value": 199.9,
+    "value": 260.0,
     "qrCode": "/assets/qr-codes/qr-code.png",
     "pixKey": "00020101021126580014br.gov.bcb.pix0136c0a2d627-ba9e-4e48-8650-93cbfb8979915204000053039865802BR5917JOSE E G DA COSTA6013SANTA CRUZ DO62070503***6304366D",
     "description": "Liquidificador potente para preparar sucos e vitaminas.",
@@ -82,7 +82,7 @@
   {
     "nome": "Jogo de Cama de Casal",
     "image": "/assets/gift-images/lencol.jpg",
-    "value": 159.9,
+    "value": 210.9,
     "qrCode": "/assets/qr-codes/qr-code.png",
     "pixKey": "00020101021126580014br.gov.bcb.pix0136c0a2d627-ba9e-4e48-8650-93cbfb8979915204000053039865802BR5917JOSE E G DA COSTA6013SANTA CRUZ DO62070503***6304366D",
     "description": "Jogo de cama casal 100% algodão, confortável e durável.",
@@ -102,7 +102,7 @@
   {
     "nome": "Panela Elétrica de Arroz",
     "image": "/assets/gift-images/panela-arroz.jpg",
-    "value": 159.9,
+    "value": 214.9,
     "qrCode": "/assets/qr-codes/qr-code.png",
     "pixKey": "00020101021126580014br.gov.bcb.pix0136c0a2d627-ba9e-4e48-8650-93cbfb8979915204000053039865802BR5917JOSE E G DA COSTA6013SANTA CRUZ DO62070503***6304366D",
     "description": "Panela elétrica de arroz, prática e eficiente.",
@@ -112,7 +112,7 @@
   {
     "nome": "Batedeira Planetária",
     "image": "/assets/gift-images/batedeira.jpg",
-    "value": 299.9,
+    "value": 356.9,
     "qrCode": "/assets/qr-codes/qr-code.png",
     "pixKey": "00020101021126580014br.gov.bcb.pix0136c0a2d627-ba9e-4e48-8650-93cbfb8979915204000053039865802BR5917JOSE E G DA COSTA6013SANTA CRUZ DO62070503***6304366D",
     "description": "Batedeira planetária para facilitar o preparo de receitas.",
@@ -142,12 +142,12 @@
   {
     "nome": "Ventilador",
     "image": "/assets/gift-images/ventilador.jpg",
-    "value": 199.9,
+    "value": 220.0,
     "qrCode": "/assets/qr-codes/qr-code.png",
     "pixKey": "00020101021126580014br.gov.bcb.pix0136c0a2d627-ba9e-4e48-8650-93cbfb8979915204000053039865802BR5917JOSE E G DA COSTA6013SANTA CRUZ DO62070503***6304366D",
     "description": "Ventilador de coluna com 3 velocidades e oscilação horizontal.",
     "message": "Obrigado por nos ajudar com o presente: Ventilador!",
-    "disable": false
+    "disable": true
   },
   {
     "nome": "Bebedouro de Água",
@@ -172,7 +172,7 @@
   {
     "nome": "Micro-ondas",
     "image": "/assets/gift-images/microondas.jpg",
-    "value": 349.9,
+    "value": 475.9,
     "qrCode": "/assets/qr-codes/qr-code.png",
     "pixKey": "00020101021126580014br.gov.bcb.pix0136c0a2d627-ba9e-4e48-8650-93cbfb8979915204000053039865802BR5917JOSE E G DA COSTA6013SANTA CRUZ DO62070503***6304366D",
     "description": "Micro-ondas, 20 litros, ideal para aquecer e preparar alimentos.",
@@ -182,7 +182,7 @@
   {
     "nome": "Purificador de Ar",
     "image": "/assets/gift-images/purificador.jpg",
-    "value": 349.9,
+    "value": 370.9,
     "qrCode": "/assets/qr-codes/qr-code.png",
     "pixKey": "00020101021126580014br.gov.bcb.pix0136c0a2d627-ba9e-4e48-8650-93cbfb8979915204000053039865802BR5917JOSE E G DA COSTA6013SANTA CRUZ DO62070503***6304366D",
     "description": "Purificador de ar com filtro HEPA, ideal para ambientes internos.",

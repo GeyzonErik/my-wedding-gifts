@@ -91,6 +91,14 @@
   .close-button {
     @apply absolute top-4 right-4 w-8 h-8 rounded-full bg-muted hover:bg-muted/80 flex items-center justify-center transition-all duration-200 hover:scale-110;
   }
+  
+  .whatsapp-button {
+    @apply bg-green-600 text-white px-6 py-3 rounded-full font-medium transition-all duration-300 hover:bg-green-700 hover:shadow-md hover:scale-105;
+  }
+  
+  .confirmation-textarea {
+    @apply w-full p-4 border border-serenity-accent rounded-lg resize-none focus:outline-none focus:ring-2 focus:ring-serenity-blue focus:border-transparent transition-all duration-200;
+  }
 }
 
 @keyframes modalFadeIn {
