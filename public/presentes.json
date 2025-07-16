@@ -2,7 +2,7 @@
   {
     "nome": "Boleira",
     "image": "/assets/gift-images/boleira.jpg",
-    "value": 159.9,
+    "value": 99.9,
     "qrCode": "/assets/qr-codes/qr-code.png",
     "pixKey": "00020101021126580014br.gov.bcb.pix0136c0a2d627-ba9e-4e48-8650-93cbfb8979915204000053039865802BR5917JOSE E G DA COSTA6013SANTA CRUZ DO62070503***6304366D",
     "description": "Boleira elegante para servir bolos e tortas com estilo.",
@@ -32,7 +32,7 @@
   {
     "nome": "Jogo de Copos",
     "image": "/assets/gift-images/copos.jpg",
-    "value": 149.9,
+    "value": 79.9,
     "qrCode": "/assets/qr-codes/qr-code.png",
     "pixKey": "00020101021126580014br.gov.bcb.pix0136c0a2d627-ba9e-4e48-8650-93cbfb8979915204000053039865802BR5917JOSE E G DA COSTA6013SANTA CRUZ DO62070503***6304366D",
     "description": "Conjunto de copos de vidro para diversas bebidas.",
@@ -72,7 +72,7 @@
   {
     "nome": "Potes de Vidro",
     "image": "/assets/gift-images/potes.jpg",
-    "value": 169.9,
+    "value": 119.9,
     "qrCode": "/assets/qr-codes/qr-code.png",
     "pixKey": "00020101021126580014br.gov.bcb.pix0136c0a2d627-ba9e-4e48-8650-93cbfb8979915204000053039865802BR5917JOSE E G DA COSTA6013SANTA CRUZ DO62070503***6304366D",
     "description": "Conjunto de potes de vidro para armazenar alimentos.",
