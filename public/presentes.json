@@ -107,7 +107,7 @@
     "pixKey": "00020101021126580014br.gov.bcb.pix0136c0a2d627-ba9e-4e48-8650-93cbfb8979915204000053039865802BR5917JOSE E G DA COSTA6013SANTA CRUZ DO62070503***6304366D",
     "description": "Panela elétrica de arroz, prática e eficiente.",
     "message": "Obrigado por nos ajudar com o presente: Panela Elétrica de Arroz!",
-    "disable": false
+    "disable": true
   },
   {
     "nome": "Batedeira Planetária",
@@ -138,16 +138,6 @@
     "description": "Cafeteira expresso automática com sistema de cápsulas, modelo Passione.",
     "message": "Obrigado por nos ajudar com o presente: Cafeteira Cápsula Três Corações!",
     "disable": false
-  },
-  {
-    "nome": "Ventilador",
-    "image": "/assets/gift-images/ventilador.jpg",
-    "value": 220.0,
-    "qrCode": "/assets/qr-codes/qr-code.png",
-    "pixKey": "00020101021126580014br.gov.bcb.pix0136c0a2d627-ba9e-4e48-8650-93cbfb8979915204000053039865802BR5917JOSE E G DA COSTA6013SANTA CRUZ DO62070503***6304366D",
-    "description": "Ventilador de coluna com 3 velocidades e oscilação horizontal.",
-    "message": "Obrigado por nos ajudar com o presente: Ventilador!",
-    "disable": true
   },
   {
     "nome": "Bebedouro de Água",

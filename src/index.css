@@ -99,6 +99,29 @@
   .confirmation-textarea {
     @apply w-full p-4 border border-serenity-accent rounded-lg resize-none focus:outline-none focus:ring-2 focus:ring-serenity-blue focus:border-transparent transition-all duration-200;
   }
+  .sold-out-overlay {
+    @apply absolute inset-0 flex flex-col items-center justify-center rounded-2xl z-20 bg-gradient-to-br from-serenity-blue/80 to-serenity-light/80 backdrop-blur-sm;
+    border: 2px dashed theme('colors.serenity-blue', #93a9d1);
+    pointer-events: none;
+  }
+  .sold-out-icon {
+    font-size: 2.5rem;
+    color: #93a9d1;
+    margin-bottom: 0.5rem;
+    filter: drop-shadow(0 2px 6px rgba(147,169,209,0.15));
+  }
+  .sold-out-text {
+    @apply font-display text-2xl md:text-3xl font-bold text-serenity-text drop-shadow;
+    letter-spacing: 0.04em;
+  }
+  .sold-out-tag {
+    @apply absolute top-4 right-4 bg-serenity-blue text-white font-semibold px-3 py-1 rounded-full text-xs shadow-md z-10 uppercase tracking-wider;
+    letter-spacing: 0.08em;
+  }
+  .price-strikethrough {
+    @apply line-through text-serenity-text-light;
+    opacity: 0.7;
+  }
 }
 
 @keyframes modalFadeIn {

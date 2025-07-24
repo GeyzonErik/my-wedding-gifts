@@ -92,7 +92,8 @@ const Index = () => {
   };
 
   const sortedPresents = [...presents]
-    .filter(present => !present.disable)
+    // Remover filtro para mostrar todos, inclusive desabilitados
+    // .filter(present => !present.disable)
     .sort((a, b) => {
       return sortOrder === 'asc' ? a.value - b.value : b.value - a.value;
     });
@@ -127,43 +128,46 @@ const Index = () => {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {sortedPresents.map((present, index) => (
-            <div
-              key={index}
-              className="wedding-card fade-in hover-lift"
-              style={{ animationDelay: `${index * 0.1}s` }}
-            >
-              <div className="aspect-video rounded-xl overflow-hidden mb-4 bg-serenity-accent">
-                <img
-                  src={present.image}
-                  alt={present.nome}
-                  className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
-                  loading="lazy"
-                />
-              </div>
-              
-              <h3 className="font-display text-xl font-medium text-serenity-text mb-2">
-                {present.nome}
-              </h3>
-              
-              <p className="text-2xl font-semibold text-serenity-blue mb-3">
-                {formatCurrency(present.value)}
-              </p>
-              
-              {present.description && (
-                <p className="text-serenity-text-light text-sm mb-4 leading-relaxed">
-                  {present.description}
-                </p>
-              )}
-              
-              <button
-                onClick={() => openModal(present)}
-                className="wedding-button w-full"
+          {sortedPresents.map((present, index) => {
+            const isDisabled = present.disable;
+            return (
+              <div
+                key={index}
+                className={`wedding-card fade-in hover-lift relative`}
+                style={{ animationDelay: `${index * 0.1}s` }}
               >
-                💝 Presentear
-              </button>
-            </div>
-          ))}
+                {isDisabled && (
+                  <span className="sold-out-tag">Presenteado ❤️ </span>
+                )}
+                <div className="aspect-video rounded-xl overflow-hidden mb-4 bg-serenity-accent">
+                  <img
+                    src={present.image}
+                    alt={present.nome}
+                    className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
+                    loading="lazy"
+                  />
+                </div>
+                <h3 className="font-display text-xl font-medium text-serenity-text mb-2">
+                  {present.nome}
+                </h3>
+                <p className={`text-2xl font-semibold text-serenity-blue mb-3 ${isDisabled ? 'price-strikethrough' : ''}`}>
+                  {formatCurrency(present.value)}
+                </p>
+                {present.description && (
+                  <p className="text-serenity-text-light text-sm mb-4 leading-relaxed">
+                    {present.description}
+                  </p>
+                )}
+                <button
+                  onClick={() => !isDisabled && openModal(present)}
+                  className={`wedding-button w-full ${isDisabled ? 'bg-gray-300 text-gray-400 cursor-not-allowed' : ''}`}
+                  disabled={isDisabled}
+                >
+                  {isDisabled ? 'Esgotado' : '💝 Presentear'}
+                </button>
+              </div>
+            );
+          })}
         </div>
       </main>
 
