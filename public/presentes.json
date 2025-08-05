@@ -27,7 +27,7 @@
     "pixKey": "00020101021126580014br.gov.bcb.pix0136c0a2d627-ba9e-4e48-8650-93cbfb8979915204000053039865802BR5917JOSE E G DA COSTA6013SANTA CRUZ DO62070503***6304366D",
     "description": "Jogo de toalhas 100% algodão, macias e absorventes.",
     "message": "Obrigado por nos ajudar com o presente: Jogo de Toalha!",
-    "disable": false
+    "disable": true
   },
   {
     "nome": "Jogo de Copos",
@@ -37,7 +37,7 @@
     "pixKey": "00020101021126580014br.gov.bcb.pix0136c0a2d627-ba9e-4e48-8650-93cbfb8979915204000053039865802BR5917JOSE E G DA COSTA6013SANTA CRUZ DO62070503***6304366D",
     "description": "Conjunto de copos de vidro para diversas bebidas.",
     "message": "Obrigado por nos ajudar com o presente: Jogo de Copos!",
-    "disable": false
+    "disable": true
   },
   {
     "nome": "Jogo de Panela Antiaderente",
@@ -77,7 +77,7 @@
     "pixKey": "00020101021126580014br.gov.bcb.pix0136c0a2d627-ba9e-4e48-8650-93cbfb8979915204000053039865802BR5917JOSE E G DA COSTA6013SANTA CRUZ DO62070503***6304366D",
     "description": "Conjunto de potes de vidro para armazenar alimentos.",
     "message": "Obrigado por nos ajudar com o presente: Potes de Vidro!",
-    "disable": false
+    "disable": true
   },
   {
     "nome": "Jogo de Cama de Casal",
