@@ -47,7 +47,7 @@
     "pixKey": "00020101021126580014br.gov.bcb.pix0136c0a2d627-ba9e-4e48-8650-93cbfb8979915204000053039865802BR5917JOSE E G DA COSTA6013SANTA CRUZ DO62070503***6304366D",
     "description": "Conjunto de panelas antiaderentes, fáceis de limpar e cozinhar.",
     "message": "Obrigado por nos ajudar com o presente: Jogo de Panela Antiaderente!",
-    "disable": false
+    "disable": true
   },
   {
     "nome": "Sanduicheira Grill",
@@ -57,7 +57,7 @@
     "pixKey": "00020101021126580014br.gov.bcb.pix0136c0a2d627-ba9e-4e48-8650-93cbfb8979915204000053039865802BR5917JOSE E G DA COSTA6013SANTA CRUZ DO62070503***6304366D",
     "description": "Sanduicheira grill 2 em 1, para preparar sanduíches e grelhados.",
     "message": "Obrigado por nos ajudar com o presente: Sanduicheira Grill!",
-    "disable": false
+    "disable": true
   },
   {
     "nome": "Liquidificador",
@@ -147,7 +147,7 @@
     "pixKey": "00020101021126580014br.gov.bcb.pix0136c0a2d627-ba9e-4e48-8650-93cbfb8979915204000053039865802BR5917JOSE E G DA COSTA6013SANTA CRUZ DO62070503***6304366D",
     "description": "Bebedouro de água com compressor e filtro, ideal para uso doméstico.",
     "message": "Obrigado por nos ajudar com o presente: Bebedouro de Água!",
-    "disable": false
+    "disable": true
   },
   {
     "nome": "Passador de Roupa a Vapor",
