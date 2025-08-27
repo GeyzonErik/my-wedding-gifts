@@ -1,5 +1,35 @@
 [
   {
+    "nome": "Abajur de Quarto",
+    "image": "/assets/gift-images/abajur.jpg",
+    "value": 120.0,
+    "qrCode": "/assets/qr-codes/qr-code.png",
+    "pixKey": "00020101021126580014br.gov.bcb.pix0136c0a2d627-ba9e-4e48-8650-93cbfb8979915204000053039865802BR5917JOSE E G DA COSTA6013SANTA CRUZ DO62070503***6304366D",
+    "description": "Abajur moderno com luz suave, ideal para o quarto.",
+    "message": "Obrigado por nos ajudar com o presente: Abajur de Quarto!",
+    "disable": false
+  },
+  {
+    "nome": "Tapete Decorativo",
+    "image": "/assets/gift-images/tapete-sala.jpg",
+    "value": 119.9,
+    "qrCode": "/assets/qr-codes/qr-code.png",
+    "pixKey": "00020101021126580014br.gov.bcb.pix0136c0a2d627-ba9e-4e48-8650-93cbfb8979915204000053039865802BR5917JOSE E G DA COSTA6013SANTA CRUZ DO62070503***6304366D",
+    "description": "Tapete decorativo para sala ou quarto, confortável e moderno.",
+    "message": "Obrigado por nos ajudar com o presente: Tapete Decorativo!",
+    "disable": false
+  },
+  {
+    "nome": "Escorredor de Louça Compacto",
+    "image": "/assets/gift-images/escorredor-prato.png",
+    "value": 90.9,
+    "qrCode": "/assets/qr-codes/qr-code.png",
+    "pixKey": "00020101021126580014br.gov.bcb.pix0136c0a2d627-ba9e-4e48-8650-93cbfb8979915204000053039865802BR5917JOSE E G DA COSTA6013SANTA CRUZ DO62070503***6304366D",
+    "description": "Escorredor básico para 12 pratos mais 6 copos, ideal pra pia pequena.",
+    "message": "Obrigado por nos ajudar com o presente: Escorredor de Louça Compacto!",
+    "disable": false
+  },
+  {
     "nome": "Boleira",
     "image": "/assets/gift-images/boleira.jpg",
     "value": 99.9,
@@ -17,7 +47,7 @@
     "pixKey": "00020101021126580014br.gov.bcb.pix0136c0a2d627-ba9e-4e48-8650-93cbfb8979915204000053039865802BR5917JOSE E G DA COSTA6013SANTA CRUZ DO62070503***6304366D",
     "description": "Kit completo com toalhas, tapetes e acessórios para o banheiro.",
     "message": "Obrigado por nos ajudar com o presente: Kit de Banheiro!",
-    "disable": false
+    "disable": true
   },
   {
     "nome": "Jogo de Toalha",
@@ -87,7 +117,7 @@
     "pixKey": "00020101021126580014br.gov.bcb.pix0136c0a2d627-ba9e-4e48-8650-93cbfb8979915204000053039865802BR5917JOSE E G DA COSTA6013SANTA CRUZ DO62070503***6304366D",
     "description": "Jogo de cama casal 100% algodão, confortável e durável.",
     "message": "Obrigado por nos ajudar com o presente: Jogo de Cama de Casal!",
-    "disable": false
+    "disable": true
   },
   {
     "nome": "Aspirador Vertical",
@@ -97,7 +127,7 @@
     "pixKey": "00020101021126580014br.gov.bcb.pix0136c0a2d627-ba9e-4e48-8650-93cbfb8979915204000053039865802BR5917JOSE E G DA COSTA6013SANTA CRUZ DO62070503***6304366D",
     "description": "Aspirador vertical sem fio, prático para limpeza diária.",
     "message": "Obrigado por nos ajudar com o presente: Aspirador Vertical!",
-    "disable": false
+    "disable": true
   },
   {
     "nome": "Panela Elétrica de Arroz",
@@ -127,7 +157,7 @@
     "pixKey": "00020101021126580014br.gov.bcb.pix0136c0a2d627-ba9e-4e48-8650-93cbfb8979915204000053039865802BR5917JOSE E G DA COSTA6013SANTA CRUZ DO62070503***6304366D",
     "description": "Conjunto de pratos e copos de porcelana para 6 pessoas.",
     "message": "Obrigado por nos ajudar com o presente: Jogo de Pratos e Copos!",
-    "disable": false
+    "disable": true
   },
   {
     "nome": "Cafeteira Cápsula Três Corações",
@@ -157,16 +187,6 @@
     "pixKey": "00020101021126580014br.gov.bcb.pix0136c0a2d627-ba9e-4e48-8650-93cbfb8979915204000053039865802BR5917JOSE E G DA COSTA6013SANTA CRUZ DO62070503***6304366D",
     "description": "Passador de roupa a vapor portátil, ideal para retoques rápidos.",
     "message": "Obrigado por nos ajudar com o presente: Passador de Roupa a Vapor!",
-    "disable": false
-  },
-  {
-    "nome": "Micro-ondas",
-    "image": "/assets/gift-images/microondas.jpg",
-    "value": 475.9,
-    "qrCode": "/assets/qr-codes/qr-code.png",
-    "pixKey": "00020101021126580014br.gov.bcb.pix0136c0a2d627-ba9e-4e48-8650-93cbfb8979915204000053039865802BR5917JOSE E G DA COSTA6013SANTA CRUZ DO62070503***6304366D",
-    "description": "Micro-ondas, 20 litros, ideal para aquecer e preparar alimentos.",
-    "message": "Obrigado por nos ajudar com o presente: Micro-ondas!",
     "disable": true
   },
   {
