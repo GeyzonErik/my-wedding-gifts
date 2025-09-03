@@ -7,7 +7,7 @@
     "pixKey": "00020101021126580014br.gov.bcb.pix0136c0a2d627-ba9e-4e48-8650-93cbfb8979915204000053039865802BR5917JOSE E G DA COSTA6013SANTA CRUZ DO62070503***6304366D",
     "description": "Abajur moderno com luz suave, ideal para o quarto.",
     "message": "Obrigado por nos ajudar com o presente: Abajur de Quarto!",
-    "disable": false
+    "disable": true
   },
   {
     "nome": "Tapete Decorativo",
@@ -27,7 +27,7 @@
     "pixKey": "00020101021126580014br.gov.bcb.pix0136c0a2d627-ba9e-4e48-8650-93cbfb8979915204000053039865802BR5917JOSE E G DA COSTA6013SANTA CRUZ DO62070503***6304366D",
     "description": "Escorredor básico para 12 pratos mais 6 copos, ideal pra pia pequena.",
     "message": "Obrigado por nos ajudar com o presente: Escorredor de Louça Compacto!",
-    "disable": false
+    "disable": true
   },
   {
     "nome": "Boleira",
